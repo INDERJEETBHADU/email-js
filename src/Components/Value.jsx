@@ -32,7 +32,8 @@ function Value() {
       (error) => {
         console.error("Email failed to send!", error.text);
       }
-    );
+      );
+      setInputvalue({ firstvalue: "", secondvalue: "", thirdvalue: "" });
   };
 
   return (
